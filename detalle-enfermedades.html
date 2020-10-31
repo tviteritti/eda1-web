@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/detalle-enfermedades.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -87,20 +88,20 @@
                     </div>
                 </section>
                 <section class="cont__main-formulario-form">
-                    <form action="#" method="get">
+                    <form action="#" method="get" onsubmit="return validar()">
                         <div>
-                           <input id="nombreapellido" class="barra-input" type="text" placeholder="Nombre y Apellido" required>
+                           <input id="nombreapellido" class="barra-input" type="text" placeholder="Nombre y Apellido" >
                         </div>
 
-                        <input class="barra-input" type="number" placeholder="DNI"
-                        required>
+                        <input id="dni" class="barra-input" type="number" placeholder="DNI"
+                        >
 
-                        <input class="barra-input" type="tel" placeholder="Telefono"
-                        required>
+                        <input id="telefono" class="barra-input" type="tel" placeholder="Telefono"
+                        >
 
                         <div>
                             <input class="barra-input" type="text" placeholder="Ciudad"
-                            required>
+                            >
 
                             <label for="sexo">SEXO</label>
                            F <input type="radio" name="sexo">
@@ -111,10 +112,10 @@
                         <div class="form__viajes-exterior">
                             <div>
                                 <label for="question">¿Has viajado al exterior de la Republica Argentina?</label>
-                                si <input type="radio" name="question">
-                                no <input type="radio" name="question">
+                                si <input type="radio" value="si" name="question" onchange="viaje()">
+                                no <input type="radio" value="no" name="question" onchange="viaje()">
                             </div>
-                            <div>
+                            <div class="oculto" id="viajes">
                                 <label for ="paises">paises visitados</label>
                                 <select id="barra-paises" name="paises" id="paises">
                                     <option value="br">Brasil</option>
@@ -150,13 +151,20 @@
 
                         <div class="input-question">
                         <label for="question5">¿tuviste dificultad para respirar?</label>
-                        si <input type="radio" name="question5">
-                        no <input type="radio" name="question5">
+                        si <input type="radio" value="si" name="question5" onchange="mostrarDireccion()">
+                        no <input type="radio" value="no" name="question5" onchange="mostrarDireccion()">
                         </div>
 
-                        <input class="barra-input" type="text" placeholder="Direccion" required>
+                        <div class="oculto" id="direccion">
+                            <input class="barra-input" type="text" placeholder="Direccion" >
+                        </div>
 
-                        <input class="barra-input" type="text" placeholder="Ciudad" required>
+                        <div>
+                            <input class="barra-input" type="text" placeholder="Ciudad" >
+                        </div>
+                        
+                        <input type="submit" class="barra-input" id="botonEnviar">
+                        <div id="mensajeDeError"></div>
                     </form>
                 </section>
             </div>
@@ -204,6 +212,7 @@
             </div>
         </section>
     </footer>
+    <script src="js/detalle-enfermedades.js"></script>
 </body>
 
 </html>

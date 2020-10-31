@@ -67,6 +67,9 @@ aside h2{
     width: 200px;
 
 }
+.oculto{
+    display: none;
+}
 .cont__main-formulario-form{
     width: 100%;
     margin-left: 50px;
@@ -81,6 +84,9 @@ aside h2{
     margin-right: 10px;
 }
 #nombreapellido{
+    width: 618px;
+}
+#botonEnviar{
     width: 618px;
 }
 #barra-paises{
@@ -113,6 +119,9 @@ aside h2{
         width: 200px;
     }
     #nombreapellido{
+        width: 518px;
+    }
+    #botonEnviar{
         width: 518px;
     }
     #barra-paises{
@@ -171,6 +180,9 @@ aside h2{
     #nombreapellido{
         width: 418px;
     }
+    #botonEnviar{
+        width: 418px;
+    }
 
          /*-----------descripcion-----------*/
 
@@ -189,6 +201,9 @@ aside h2{
         width: 150px;
     }
     #nombreapellido{
+        width: 320px;
+    }
+    #botonEnviar{
         width: 320px;
     }
     #barra-paises{
@@ -224,6 +239,9 @@ aside h2{
         height: 90px
     }
     #nombreapellido{
+        width: 150px;
+    }
+    #botonEnviar{
         width: 150px;
     }
 }
