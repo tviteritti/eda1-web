@@ -59,24 +59,26 @@
     <main>
         <div class="cont__main">
             <section class="cont__main-form">
-                <form action="#" method="get">
+                <form action="#" method="get" onsubmit="return validar()">
                     <h1>CONTACTO</h1>
                     <div>
-                        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" required>
+                        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" >
                     </div>
                     <div>
-                        <input type="text" id="Apellido" name="Apellido" placeholder="Apellido" required>
+                        <input type="text" id="Apellido" name="Apellido" placeholder="Apellido" >
                     </div>
                     <div>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <input type="email" id="email" name="email" placeholder="Email" >
                     </div>
                     <div>
                        <input type="tel" id="telefono" name="telefono" placeholder="telefono (opciona)">
                     </div>
                     <div>
-                        <textarea name="consulta" id="consulta" placeholder="ingrese su consulta" required></textarea>
+                        <textarea name="consulta" id="consulta" placeholder="ingrese su consulta" onkeyup="contarCaracteres()" maxlength="1000"></textarea>
+                        <p><span id="caracteres"></span> caracteres restantes</p>
                     </div>
                     <input type="submit"  id="boton" value="Enviar">
+                    <div id="mensajeDeError"></div>
                 </form>
             </section>
             <section class="cont__main-datos">
@@ -131,6 +133,7 @@
             </div>
         </section>
     </footer>
+    <script src="js/contacto.js"></script>
 </body>
 
 </html>
