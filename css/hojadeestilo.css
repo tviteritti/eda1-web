@@ -95,6 +95,9 @@ footer{
 }
 
             /*------------nav------------*/
+nav{
+z-index: 50;
+}
 #boton-menu{
     display: none;
 }

@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <link rel="shortcut icon" href="img/icono.ico">
     <meta charset="UTF-8">
     <title>PREVENT=HEALTH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/hojadeestilo.css">
-    <link rel="stylesheet" href="css/mapa.css">
-    <link rel="stylesheet" href="css/popup.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calendario.css">
     <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-	<script type="text/javascript" src="js/modal.js"></script>
+    <link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+    <script src="js/calendario.js"></script>
+    <link rel="stylesheet" href="css/calendario.css">
 </head>
-
 <body>
     <header>
         <div class="cont__header">
@@ -51,58 +52,10 @@
         </div>
     </nav>
     <aside>
-        <a class="popup tituloPopup" href="#dialog" name="modal">Posadas</a>
-	
-        <div id="boxes">
-    
-            <div id="dialog" class="window">
-                <p>Direccion: Avenida Presidente Arturo U. Illia s/n y Marconi Morón 386, B1684</p>
-                    <p> Localidad: El Palomar</p>
-                <a href="#"class="close popup"/>Cerrar</a>
-            </div>
-            
-            <div id="mask"></div>
-        
-        </div>
-    
-        <a class="popup tituloPopup" href="#dialog2" name="modal2">Ramos Mejia</a>
-    
-        <div id="boxes2">
-    
-            <div id="dialog2" class="window2">
-                
-                <p>Direccion: Gral. Urquiza 609, C1221 ADC, Buenos Aires</p>
-                    <p> Localidad: Ramos Mejia</p>
-                <a href="#"class="close2 popup"/>Cerrar</a>
-            </div>
-            
-            <div id="mask2"></div>
-        
-        </div>
-    
-        <a class="popup tituloPopup" href="#dialog3" name="modal3">Algerich</a>
-    
-        <div id="boxes3">
-    
-            <div id="dialog3" class="window3">
-                <p>Direccion: Pi y Margall 750, C1155 AHD, Buenos Aires</p>
-                <p>Localidad: Buenos Aires</p> 
-                <a href="#"class="close3 popup"/>Cerrar</a>
-            </div>
- 
-            <div id="mask3"></div>
-        
-        </div>
+
     </aside>
     <main>
-        <section class="cont__main">
-            <div class="cont__main-h1">
-                <h1>MAPAS DE HOSPITALES DISPONIBLES</h1>
-            </div>
-            <div class="cont__main-mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6562.669877234847!2d-58.56784012337116!3d-34.671495220872835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1601387158029!5m2!1ses!2sar" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-        </section>
+        <article id="calendario"></article>
     </main>
     <footer>
         <section class="cont__footer">
@@ -135,4 +88,5 @@
             </div>
         </section>
     </footer>
-</body></html>
+</body>
+</html>
