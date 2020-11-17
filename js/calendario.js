@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
                 title: 'Vacuna 2',
-                start: '2020-11-25'
+                start: '2020-12-25'
             },
             {
                 title: 'Vacuna 2',
-                start: '2020-11-27'
+                start: '2021-01-27'
             }
             
         ]
